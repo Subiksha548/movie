@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Grid Info</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: auto;
+      padding: 2px;
+      color: black;
+      margin: 0;
+      font-size: small;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 220px;
+      gap: 10px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #e0e0e0;
+    }
+
+    .grid-container > div {
+      background-color: #ffffff;
+      color: #000;
+      padding: 10px;
+      font-size: 16px;
+      text-align: center;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .grid-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .cast-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .cast-table th, .cast-table td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .cast-table th {
+      background-color: #f0f0f0;
+    }
+
+    .cast-table td:nth-child(1) {
+      font-weight: bold;
+      color: #0077cc;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Movie Info Grid</h1>
+
+  <div class="grid-container">
+    <!-- 1: Image -->
+    <div>
+      <img src="sita.PNG" alt="Sita Ramam">
+    </div>
+
+    <!-- 2: Title -->
+    <div>
+        <strong>Title:</strong><br>Sita Ramam
+    </div>
+
+    <!-- 3: Genre -->
+    <div>
+      <strong>Genre:</strong><br>Drama, Romance
+    </div>
+
+    <!-- 4: Cast Table Part 1 -->
+    <div>
+      <strong>Cast:</strong><br>
+      <table class="cast-table">
+        <tr>
+          <th>Character</th>
+          <th>Actor</th>
+        </tr>
+        <tr>
+          <td>Lieutenant Ram<br><small>Protagonist</small></td>
+          <td>Dulquer Salmaan</td>
+        </tr>
+        <tr>
+          <td>Sita Mahalakshmi<br><small>Heroine</small></td>
+          <td>Mrunal Thakur</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 5: Director -->
+    <div>
+      <strong>Director:</strong><br>Hanu Raghavapudi
+    </div>
+
+    <!-- 6: Release -->
+    <div>
+      <strong>Release Year:</strong><br>2022
+    </div>
+
+    <!-- 7: Cast Table Part 2 -->
+    <div>
+      <table class="cast-table">
+        <tr>
+          <th>Character</th>
+          <th>Actor</th>
+        </tr>
+        <tr>
+          <td>Afreen<br><small>Supporting Role</small></td>
+          <td>Rashmika Mandanna</td>
+        </tr>
+        <tr>
+          <td>Vishnu Sharma<br><small>Supporting Role</small></td>
+          <td>Sumanth</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 8: Summary -->
+    <div>
+      <strong>Summary:</strong><br>
+      In 1964 Kashmir, Lieutenant Ram receives anonymous love letters from Sita Mahalakshmi, sparking a romantic quest to find her. In 1985, Afreen unravels their love story through a letter-delivery mission.
+    </div>
+  </div>
+
+</body>
+</html>
